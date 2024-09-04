@@ -10,7 +10,7 @@ using DAL;
 using System.Text;
 using System.IO;
 
-//TES TEST AJA 
+//TES TEST AJAAAAAAAAAAA
 public partial class Pages_Admin_Parameters : PageBase
 {    
     #region Handlers
