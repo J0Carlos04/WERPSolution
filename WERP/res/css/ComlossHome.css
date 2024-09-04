@@ -1,0 +1,109 @@
+﻿@font-face {
+    font-family: 'Poppins';
+    src: url('../../res/fonts/poppins/Poppins-Regular.ttf') format('truetype');
+    /* Tambahan untuk font lainnya (bold, italic, dll) */
+}
+
+.container {
+    width: 100%;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+    .header > div {
+        width: 270px;
+        height: 65px;
+        background-color: #40669f;
+        color: white;
+        border-radius: 15px;
+        /*margin: 10px;*/
+        display: flex;
+        align-items: center;
+        padding-left: 20px; /* Tambahkan padding kiri */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .header .image-container {
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+    }
+
+    .header img {
+        width: 35px;
+        height: 35px;
+        margin-right: 10px;
+    }
+
+    .header .text-container {
+        font-size: 12px;
+    }
+
+.body {
+    display: flex;
+    justify-content: space-between;
+    /*margin-top: 20px;*/
+    height: 400px; /* contoh tinggi untuk body */
+}
+
+    .body > div {
+        flex: 1;
+        /*margin: 0 10px;*/
+        /*background-color: #e2e2e2;*/
+       /* padding: 20px;*/
+        text-align: center;        
+    }
+
+.body1-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+    .row > div {
+        flex: 1;
+        margin: 0 5px;
+        background-color: #ffffff; /* Warna latar belakang putih */
+        color: #000000; /* Warna teks hitam */
+        padding: 10px;
+        text-align: left;
+        font-size: 12px;
+        border-radius: 15px; /* Sudut bulat */
+    }
+
+    .row .full-width {
+        flex: 2;
+    }
+
+.grow {
+    flex-grow: 1;
+}
+
+.custom-item {
+    display: flex;
+    align-items: center;
+}
+
+    .custom-item .text-container {
+        flex: 1;
+    }
+
+    .custom-item .image-container {
+        margin-left: auto;
+    }
+
+    .custom-item img {        
+        height: 20px;
+    }

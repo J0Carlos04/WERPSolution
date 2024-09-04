@@ -1,0 +1,41 @@
+﻿.squarebox {
+    width: 100%;
+    border: solid 1px #c6c6c6;
+    text-align: center;
+}
+
+.squareboxgradientcaption {
+    color: black;
+    padding: 2px 2px 2px 10px;
+    height: 30px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.squareboxcontent {
+    background-color: #f5f5f5;
+    padding: 0px;
+    text-align: left
+}
+
+.blue {
+    background-color: #d9e9fd !important;
+}
+
+.gray {
+    border: solid 1px #c6c6c6;
+    background-color: #eaeaea !important;
+}
+
+.neptune {
+    color: #ffffff;
+    background-color: #157fcc !important;
+}
+
+.triton {
+    background-color: #f6f6f6 !important;
+}
+
+.crisp {
+    background-color: #ececec !important;
+}

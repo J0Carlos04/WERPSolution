@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Tree>
+  <TreeNode Text="Super Admin" Icon="userkey">
+	 <TreeNode Text="Module" NavigateUrl="~/Pages/SuperAdmin/Module.aspx" />
+	 <TreeNode Text="Role" NavigateUrl="~/Pages/SuperAdmin/Role.aspx" />
+	  <TreeNode Text="User Management" NavigateUrl="~/Pages/SuperAdmin/UserManagement.aspx" />	  
+  </TreeNode>	  
+  <TreeNode Text="Admin" Icon="userkey">
+	<TreeNode Text="Helpdesk" >
+		<TreeNode Text="Helpdesk Category" NavigateUrl="~/Pages/Admin/Helpdesk/HelpdeskCategory.aspx" />
+		<TreeNode Text="Request Source" NavigateUrl="~/Pages/Admin/Helpdesk/RequestSource.aspx" />
+		<TreeNode Text="Request Type" NavigateUrl="~/Pages/Admin/Helpdesk/RequestType.aspx" />
+		<TreeNode Text="Work Order Type" NavigateUrl="~/Pages/Admin/Helpdesk/WorkOrderType.aspx" />
+		<TreeNode Text="Social Media" NavigateUrl="~/Pages/Admin/Helpdesk/SocialMedia.aspx" />
+	</TreeNode>
+    <TreeNode Text="Area" NavigateUrl="~/Pages/Admin/Area.aspx" />
+    <TreeNode Text="Brand" NavigateUrl="~/Pages/Admin/Brand.aspx" />
+    <TreeNode Text="Category" NavigateUrl="~/Pages/Admin/Category.aspx" />	
+    <TreeNode Text="Department" NavigateUrl="~/Pages/Admin/Department.aspx" />
+    <TreeNode Text="Item" NavigateUrl="~/Pages/Admin/Item.aspx" />
+    <TreeNode Text="Item Group" NavigateUrl="~/Pages/Admin/ItemGroup.aspx" />
+    <TreeNode Text="Location" NavigateUrl="~/Pages/Admin/Location.aspx" />
+    <TreeNode Text="Material" NavigateUrl="~/Pages/Admin/Material.aspx" />
+    <TreeNode Text="Model" NavigateUrl="~/Pages/Admin/Model.aspx" />
+    <TreeNode Text="Operators" NavigateUrl="~/Pages/Admin/Operators.aspx" />
+    <TreeNode Text="Work Order Category" NavigateUrl="~/Pages/Admin/WorkOrderCategory.aspx" />
+    <TreeNode Text="PO (Purchase Order)" NavigateUrl="~/Pages/Admin/PO.aspx" />
+	<TreeNode Text="Parameters" NavigateUrl="~/Pages/Admin/Parameters.aspx" />
+    <TreeNode Text="Rack" NavigateUrl="~/Pages/Admin/Rack.aspx" />
+    <TreeNode Text="Specs" NavigateUrl="~/Pages/Admin/Specs.aspx" />
+    <TreeNode Text="Subject" NavigateUrl="~/Pages/Admin/Subject.aspx" />
+    <TreeNode Text="Vendor" NavigateUrl="~/Pages/Admin/Vendor.aspx" />
+    <TreeNode Text="UOM" NavigateUrl="~/Pages/Admin/UOM.aspx" />
+    <TreeNode Text="Users" NavigateUrl="~/Pages/Admin/Users.aspx" />	
+    <TreeNode Text="Warehouse" NavigateUrl="~/Pages/Admin/Warehouse.aspx" />
+  </TreeNode>
+  <TreeNode Text="Inventory" Icon="Inventory">
+    <TreeNode Text="Stock Order" NavigateUrl="~/Pages/Inventory/StockOrder.aspx" >      
+      <TreeNode Text="PO - Need My Approval" NavigateUrl="~/Pages/Inventory/StockOrder.aspx?View=Submitted" />
+      <TreeNode Text="PO - Approved" NavigateUrl="~/Pages/Inventory/StockOrder.aspx?View=Approved" />
+      <TreeNode Text="PO - Rejected" NavigateUrl="~/Pages/Inventory/StockOrder.aspx?View=Rejected" />
+    </TreeNode>
+    <TreeNode Text="Stock Received" NavigateUrl="~/Pages/Inventory/StockReceived.aspx" >
+      <TreeNode Text="Pending - Stock Received" NavigateUrl="~/Pages/Inventory/StockOrder.aspx?View=Pending" />
+      <TreeNode Text="Retur - Stock Received" NavigateUrl="~/Pages/Inventory/StockReceivedRetur.aspx" />
+    </TreeNode>    
+    <TreeNode Text="Stock Out" NavigateUrl="~/Pages/Inventory/StockOut.aspx" >      
+      <TreeNode Text="Retur" NavigateUrl="~/Pages/Inventory/StockOutRetur.aspx" />
+	  <TreeNode Text="Retur Used" NavigateUrl="~/Pages/Inventory/StockOutReturUsed.aspx" />
+    </TreeNode>    
+    <TreeNode Text="Stock" NavigateUrl="~/Pages/Inventory/Stock.aspx" />
+    <TreeNode Text="Stock Movement" NavigateUrl="~/Pages/Inventory/StockMovement.aspx" />
+  </TreeNode>
+  <TreeNode Text="Work Order" Icon="WorkOrder" NavigateUrl="~/Pages/WorkOrder/WorkOrder.aspx" >
+	  <TreeNode Text="Scheduler" NavigateUrl="~/Pages/WorkOrder/MaintenanceScheduler.aspx" />
+	  <TreeNode Text="Helpdesk" Icon="Helpdesk" NavigateUrl="~/Pages/WorkOrder/Helpdesk.aspx"  />
+  </TreeNode>
+  <TreeNode Text="Data Pelanggan" Icon="DatabaseTable" >
+      <TreeNode Text="Billing" NavigateUrl="~/Pages/DataPerumda/Billing.aspx" />	  
+	  <TreeNode Text="Pencatatan Meter" NavigateUrl="~/Pages/DataPerumda/PencatatanMeter.aspx"  />
+	  <TreeNode Text="Keterangan Catat" NavigateUrl="~/Pages/DataPerumda/KeteranganCatat.aspx"  />
+	  <TreeNode Text="Sambungan Baru" NavigateUrl="~/Pages/DataPerumda/SambunganBaru.aspx"  />
+	  <TreeNode Text="Pembukaan Kembali" NavigateUrl="~/Pages/DataPerumda/PembukaanKembali.aspx"  />
+	  <TreeNode Text="Penutupan Pelanggan" NavigateUrl="~/Pages/DataPerumda/PenutupanPelanggan.aspx"  />
+	  <TreeNode Text="Ganti Meter" NavigateUrl="~/Pages/DataPerumda/GantiMeter.aspx"  />
+	  <TreeNode Text="Customer" NavigateUrl="~/Pages/Admin/Customer.aspx" />
+	  <TreeNode Text="DRD" NavigateUrl="~/Pages/DataPerumda/DRD.aspx" />
+  </TreeNode>
+	<TreeNode Text="Data Logger" Icon="DatabaseTable" NavigateUrl="~/Pages/Logger/DataLogger.aspx" >
+		<TreeNode Text="Function" NavigateUrl="~/Pages/Logger/Function.aspx" />
+		<TreeNode Text="Unit" NavigateUrl="~/Pages/Logger/Unit.aspx" />
+		<TreeNode Text="Station" NavigateUrl="~/Pages/Logger/Station.aspx" />
+		<TreeNode Text="Station Mapping" NavigateUrl="~/Pages/Logger/StationMapping.aspx" />		
+		<TreeNode Text="Function Station" NavigateUrl="~/Pages/Logger/FunctionStation.aspx" />
+		<TreeNode Text="Function Logger" NavigateUrl="~/Pages/Logger/FunctionLogger.aspx" />
+		<TreeNode Text="Function Logger Customer" NavigateUrl="~/Pages/Logger/FunctionLoggerCustomer.aspx" />		
+		<TreeNode Text="Logger" NavigateUrl="~/Pages/Logger/Logger.aspx"  />		
+	</TreeNode>
+	<TreeNode Text="Commloss" Icon="DatabaseTable" >
+		<TreeNode Text="Dashboard" NavigateUrl="~/Pages/Commloss/Home.aspx" />
+		<TreeNode Text="Activity" NavigateUrl="~/Pages/Commloss/Activity.aspx" />
+	</TreeNode>
+</Tree>
