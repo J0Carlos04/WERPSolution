@@ -15,15 +15,42 @@
     <Toolbars>
       <f:Toolbar runat="server" ID="tlb">
         <Items>
-          <f:Button runat="server" ID="btnSubmit" Text="Submit" Icon="DatabaseSave" OnClick="Fbtn_Click" />          
+          <f:Button runat="server" ID="btnEdit" Text="Edit" Icon="ApplicationEdit" OnClick="btn_Click"  />
+          <f:Button runat="server" ID="btnEditSave" Text="Save" Icon="DatabaseSave" OnClick="btn_Click" Hidden="true"  />           
+          <f:Button runat="server" ID="btnEditCancel" Text="Cancel" Icon="Cancel" OnClick="btn_Click" Hidden="true" />
+          <f:Button runat="server" ID="btnSubmit" Text="Submit" Icon="DatabaseSave" OnClick="btn_Click" />          
           <f:Button runat="server" ID="btnCancel" Text="Cancel" Icon="Cancel" EnablePostBack="false" OnClientClick="parent.removeActiveTab();" />
-          <f:Button runat="server" ID="btnSynchCustomer" Text="Synch Customer" Icon="DatabaseSave" OnClick="Fbtn_Click" />
+          <f:Button runat="server" ID="btnSynchCustomer" Text="Synch Customer" Icon="DatabaseSave" OnClick="btn_Click" />
         </Items>
       </f:Toolbar>
     </Toolbars>
     <Items>
       <f:ContentPanel runat="server" ID="pData" ShowBorder="true" AutoScroll="true"  >
         <Content><div class="wrapper-suppress"><asp:Panel runat="server" ID="pnlContent">
+
+          <asp:GridView runat="server" ID="gvData" AutoGenerateColumns="false" CssClass="table table-striped table-bordered table-hover" OnRowDataBound="gvData_RowDataBound" Width="100%" HeaderStyle-HorizontalAlign="Center">
+            <Columns>
+              <asp:TemplateField ItemStyle-HorizontalAlign="Center" HeaderStyle-Width="20px">
+                <HeaderTemplate><asp:CheckBox ID="cbCheckAll" runat="server" Width="16px" Height="16px" /></HeaderTemplate>
+                <ItemTemplate><asp:CheckBox ID="cb_IsChecked" runat="server" Checked='<%# (bool)Eval("IsChecked") %>' /></ItemTemplate>              
+              </asp:TemplateField>
+              <asp:TemplateField HeaderText="No" HeaderStyle-Width="20px" ItemStyle-Width="20px" ItemStyle-HorizontalAlign="Right" >
+                <ItemTemplate>
+                  <asp:Literal runat="server" ID="ltrl_Mode" Text='<%# Eval("Mode")  %>' Visible="false" />
+                  <asp:Literal runat="server" ID="ltrl_Id" Text='<%# Eval("Id")  %>' Visible="false" />
+                  <asp:Literal runat="server" ID="ltrl_No" Text='<%# $"{Eval("No")}" == "0" ? "New" : ($"{Eval("No")}" == "-1" ? "" : $"{Eval("No")}")  %>' />
+                </ItemTemplate>
+              </asp:TemplateField>
+    
+              <asp:TemplateField HeaderText="Key" ><ItemTemplate><asp:Literal runat="server" ID="ltrl_Key" Text='<%# Eval("Key") %>' /></ItemTemplate></asp:TemplateField> 
+              <asp:TemplateField HeaderText="Text" >              
+                <ItemTemplate>		    
+                  <asp:Literal runat="server" ID="ltrlText" Text='<%# Eval("Text") %>' Visible='<%# Eval("Mode").IsEmpty() %>' />                        
+                  <asp:TextBox runat="server" ID="tb_Text" Text='<%# Eval("Text") %>' Visible='<%# !Eval("Mode").IsEmpty() %>' CssClass="form-control form-control-sm" />
+                </ItemTemplate>
+              </asp:TemplateField>                         
+          </Columns>        
+          </asp:GridView>
         
           <div class="mb-3">
             <label class="form-label">Work Order Performance Deviation Day (in days)<span class="Req">*</span></label>

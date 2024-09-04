@@ -14,7 +14,7 @@ public partial class Pages_Rack : PageBase
     #region Handlers
     protected void Page_Load(object sender, EventArgs e)
     {
-        if (!IsPostBack) LoadFirstTime();
+        if (!IsPostBack) Initialize();
     }
     protected void btn_Click(object sender, EventArgs e)
     {
@@ -132,7 +132,7 @@ public partial class Pages_Rack : PageBase
     #endregion
 
     #region Methods
-    private void LoadFirstTime()
+    private void Initialize()
     {
         SetInit();
         SetInitControl();
